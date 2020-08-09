@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class AlfabankTests {
 
     @Test
-    void archiveDepositListSize() {
+    void archiveDepositListSizeTest() {
         open("https://alfabank.ru/");
 
         $("[title=Вклады]").click(); // Перейти на страницу Вклады
