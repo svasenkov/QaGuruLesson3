@@ -11,7 +11,7 @@ public class AlfabankTests {
 
     @Test
     void archiveDepositListSize() {
-        open(URL); // Перейти на главную страницу
+        open(URL);
 
         $("[title=Вклады]").click(); // Перейти на страницу Вклады
         $$("[title=Инвестиции]").last().parent()
