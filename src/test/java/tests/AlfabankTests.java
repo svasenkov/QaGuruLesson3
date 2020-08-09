@@ -2,16 +2,14 @@ package tests;
 
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 
 public class AlfabankTests {
-    static final String URL = "https://alfabank.ru/";
 
     @Test
     void archiveDepositListSize() {
-        open(URL);
+        open("https://alfabank.ru/");
 
         $("[title=Вклады]").click(); // Перейти на страницу Вклады
         $$("[title=Инвестиции]").last().parent()
